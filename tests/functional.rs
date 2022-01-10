@@ -61,7 +61,7 @@ async fn test_pod_update() {
 
     let instructions = instruction::build_instruction(
         test_address,
-        test_address,
+        test_address, // remove
     );
 
     let (mut banks_client, payer, recent_blockhash) = program_test.start().await;
